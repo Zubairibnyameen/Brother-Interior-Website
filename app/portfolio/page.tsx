@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from "react";
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
 import ProjectsPreview from '@/components/projects-preview'
@@ -21,13 +22,17 @@ export default function Portfolio() {
             Our Finest Works
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl">
-            Explore our comprehensive portfolio of premium interior design projects showcasing our commitment to luxury, craftsmanship, and excellence.
+            Explore our comprehensive portfolio of premium interior design
+            projects showcasing our commitment to luxury, craftsmanship, and
+            excellence.
           </p>
         </div>
       </section>
-      <ProjectsPreview />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectsPreview />
+      </Suspense>
       <WhatsAppButton />
       <Footer />
     </div>
-  )
+  );
 }
