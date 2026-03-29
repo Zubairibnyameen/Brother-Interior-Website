@@ -85,7 +85,7 @@ export default function PortfolioGallery() {
         {/* Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-16">
           {categories.map(category => (
-            <Button
+            <button
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
@@ -95,7 +95,7 @@ export default function PortfolioGallery() {
               }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
-            </Button>
+            </button>
           ))}
         </div>
 
