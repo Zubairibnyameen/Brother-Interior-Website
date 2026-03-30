@@ -111,12 +111,6 @@ export const metadata: Metadata = {
   creator: 'Brother Interior',
   publisher: 'Brother Interior',
  
-  // ── Verification (add Search Console / Bing codes here) ──────────────────
-  // verification: {
-  //   google: 'YOUR_GOOGLE_SEARCH_CONSOLE_CODE',
-  //   yandex: 'YOUR_YANDEX_CODE',
-  // },
- 
   // ── Category ─────────────────────────────────────────────────────────────
   category: 'Interior Design & Home Renovation',
 }
